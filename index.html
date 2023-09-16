@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <!-- Incluir los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Incluir la fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <!-- Incluir el link para agregar el icono de la página-->
+    <link rel="icon" href="icono.ico" type="image/x-icon"> 
+
+    <!-- Estilos personalizados con imagen de fondo -->
+    <style>
+        body {
+            /* Define la imagen de fondo y su ubicación */
+            background-image: url('fondo.jpg');
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+            background-repeat: no-repeat; /* Evita la repetición de la imagen */
+            background-attachment: fixed; /* Fija la imagen de fondo en su lugar */
+            font-family: 'Barlow', sans-serif;
+            display: flex;
+            justify-content: center; /* Alinea el contenido a la izquierda horizontalmente */
+            align-items: center; /* Centra verticalmente el contenido en la página */
+            height: 100vh; /* Altura igual al 100% de la ventana del navegador */
+        }
+        .login-container {
+            width: 400px;
+            height: 700px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.764); /* Fondo semitransparente para mejorar la legibilidad */
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente el contenido en el contenedor */
+        }
+        .login-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        .login-subtitle {
+            text-align: center;
+            font-size: 16px; /* Tamaño de fuente más pequeño */
+            color: #1f1f1f;
+            margin-bottom: 20px;
+        }
+        .login-button {
+            background-color: #3a54e3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .login-button:hover {
+            background-color: rgb(63, 101, 255);
+        }
+        .register-button {
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .register-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="imagen.png" alt="Imagen de encabezado" width="200"  class="mx-auto"> <!-- Ajusta la ruta y el tamaño según tus necesidades -->
+        <h2 class="login-title">Iniciar Sesión</h2>
+        <p class="login-subtitle">Por favor, ingresa tus datos para poder acceder.</p>
+        <p class="login-subtitle"></p>
+        <form>
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu usuario">
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasena" placeholder="Ingresa tu contraseña">
+            </div>
+            <button type="submit" class="btn login-button btn-block">Iniciar Sesión</button>
+            <div class="d-flex justify-content-between w-100">
+                <a href="#" class="btn btn-link btn-sm">¿Has olvidado tu contraseña?</a>
+                <button type="button" class="btn register-button">Registrarse</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
